@@ -68,14 +68,13 @@
         [self.button addTarget:self
                    action:@selector(closeARClicked)
          forControlEvents:UIControlEventTouchUpInside];
-        [self.button setTitle:@"Exit AR" forState:UIControlStateNormal];
         
         self.button.frame = CGRectMake(
                                   0,
                                   CGRectGetHeight(self.view.bounds) - 80.0,
                                   CGRectGetWidth(self.view.bounds),
                                   80.0);
-        self.button.backgroundColor = [UIColor blackColor];
+        self.button.backgroundColor = [UIColor whiteColor];
         self.button.tintColor = [UIColor whiteColor];
         [self.view addSubview:self.button];
     }
